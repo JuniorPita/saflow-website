@@ -1,0 +1,52 @@
+// CSS Variables
+:root {
+    // Main HSL Options
+    --hue: 218; // Blue - 218, Red - 4, Orange - 18, Green - 118 and etc.
+    --sat: 100%;
+
+    // HSL Colors Binding
+    --main-color: hsl(var(--hue), var(--sat), 48%);
+    --secondary-color: hsl(var(--hue), 51%, 18%);
+    --button-color: hsl(var(--hue), 30%, 69%);
+    --main-text-color: hsl(var(--hue), 40%, 86%);
+    --secondary-text-color: hsl(var(--hue), 26%, 41%);
+    --title-color: hsl(var(--hue), 44%, 27%);
+    --subtitle-color: hsl(var(--hue), 28%, 60%);
+    --white-color: hsl(var(--hue), var(--sat), 100%);
+    --black-color: hsl(var(--hue), var(--sat), 0%);
+    --body-color: hsl(var(--hue), 0%, 90%);
+
+    // Font And Typography
+    --body-font: 'Sora', sans-serif;
+
+    --biggest-font-size: 48px;
+    --big-font-size: 36px;
+    --medium-font-size: 24px;
+    --normal-font-size: 20px;
+    --small-font-size: 16px;
+    --smaller-font-size: 14px;
+    --smallest-font-size: 12px;
+
+    // Font Weight
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    // Z-index
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+// Responsive Typography
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 64px;
+        --big-font-size: 48px;
+        --medium-font-size: 36px;
+        --normal-font-size: 24px;
+        --small-font-size: 20px;
+        --smaller-font-size: 16px;
+        --smallest-font-size: 14px;
+    }
+}

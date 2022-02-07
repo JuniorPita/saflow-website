@@ -1,0 +1,9 @@
+// Main Styles
+@import './config/variables';
+@import './base/base';
+@import './buttons/buttons';
+
+// Styles For Blocks
+@import './components/header';
+@import './components/home';
+@import './components/features';

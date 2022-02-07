@@ -1,0 +1,20 @@
+// Styles For Buttons
+.button {
+    display: inline-block;
+    color: var(--white-color);
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+
+    &__blue {
+        background-color: var(--main-color);
+    }
+
+    &__grey {
+        background-color: var(--button-color);
+    }
+
+    &:hover {
+        background-color: var(--secondary-color);
+        color: var(--main-color);
+    }
+}
