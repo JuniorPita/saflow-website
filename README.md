@@ -2,13 +2,13 @@ Project Description
 =====================
 
 **This project use stack:**
-`* HTML (HTML5)`
-`* CSS (CSS3)`
-`* Gulp (Node.js)`
-`* FlexBox (CSS)`
-`* Grid (CSS)`
-`* SCSS (SASS)`
-`* БЭМ (BEM)`
+`1. HTML (HTML5)`
+`2. CSS (CSS3)`
+`3. Gulp (Node.js)`
+`4. FlexBox (CSS)`
+`5. Grid (CSS)`
+`6. SCSS (SASS)`
+`7. БЭМ (BEM)`
 
 ***To open a finished website, follow these easy steps:***
 1. Copy this repository to any empty folder to your computer with a file with the extension - .zip
