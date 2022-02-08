@@ -1,0 +1,135 @@
+// Styles For About Block
+#first-card {
+    grid-area: firstCard;
+
+    .about__card {
+        &-img {
+            width: 550px;
+            height: 300px;
+            margin-right: 110px;
+        }
+
+        &-content {
+            &_title {
+                margin-bottom: 28px;
+            }
+        }
+    }
+}
+
+#second-card {
+    grid-area: secondCard;
+
+    .about__card {
+        &-img {
+            width: 542px;
+            height: 348px;
+            margin-left: 78px;
+        }
+
+        &-content {
+            &_title {
+                margin-bottom: 28px;
+            }
+        }
+    }
+}
+
+#third-card {
+    grid-area: thirdCard;
+
+    .about__card {
+        &-img {
+            width: 550px;
+            height: 300px;
+            margin-right: 110px;
+        }
+
+        &-content {
+            &_title {
+                margin-bottom: 28px;
+            }
+        }
+    }
+}
+
+.about {
+    &__container {
+        margin-left: 189px;
+        margin-right: 157px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 172px;
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: var(--small-font-size);
+        font-weight: var(--font-medium);
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--subtitle-color);
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        font-size: var(--big-font-size);
+        font-weight: var(--font-semi-bold);
+        line-height: 64px;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: var(--title-color);
+        margin-bottom: 96px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "firstCard firstCard"
+        "secondCard secondCard"
+        "thirdCard thirdCard";
+        row-gap: 96px;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-content {
+            &_title {
+                font-size: var(--medium-font-size);
+                font-weight: var(--font-semi-bold);
+                line-height: 40px;
+                letter-spacing: -0.03em;
+                color: var(--title-color);
+                cursor: default;
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    color: var(--subtitle-color);
+                }
+            }
+
+            &_description {
+                font-size: var(--small-font-size);
+                line-height: 32px;
+                letter-spacing: -0.02em;
+                color: var(--subtitle-color);
+            }
+        }
+
+        &-img {
+            transition: .3s ease-in-out;
+
+            &:hover {
+                transform: scale(calc(1 - 0.05));
+            }
+        }
+    }
+}
